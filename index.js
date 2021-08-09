@@ -6,9 +6,9 @@ let port =process.env.PORT || 3000;
 const insertIntoDB = async (SpO2_value,bpm_value) =>{
     const connection = await mysql.createConnection({
         host: "sql6.freesqldatabase.com",
-        user: "sql6422421",
-        password: "9su1EKKgZE",
-        database: "sql6422421",
+        user: "sql6429938",
+        password: "4XUSttYXwW",
+        database: "sql6429938",
         port: 3306,
     })
 
