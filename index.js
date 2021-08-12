@@ -7,9 +7,9 @@ const insertIntoDB = async (SpO2_value,bpm_value) =>{
     try{
     const connection = await mysql.createConnection({
         host: "sql6.freesqldatabase.com",
-        user: "sql6429938",
-        password: "4XUSttYXwW",
-        database: "sql6429938",
+        user: "sql6430628",
+        password: "BWRbhKEwqz",
+        database: "sql6430628",
         port: 3306,
     });
     } catch (err) {
