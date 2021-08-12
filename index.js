@@ -12,6 +12,7 @@ const insertIntoDB = async (SpO2_value,bpm_value) =>{
         database: "sql6430628",
         port: 3306,
     });
+    alert("Connected to SQL table!");
     } catch (err) {
     console.log(e);
   }
