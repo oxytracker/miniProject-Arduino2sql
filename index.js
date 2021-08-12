@@ -5,7 +5,7 @@ let port =process.env.PORT || 3000;
 
 const insertIntoDB = async (SpO2_value,bpm_value) =>{
     try{
-    alert("Connected to SQL table!");
+    
     const connection = await mysql.createConnection({
         host: "sql6.freesqldatabase.com",
         user: "sql6430628",
@@ -36,6 +36,7 @@ app.get('/:SpO2/:bpm',(req,res) => {
     {
         console.log('SpO2: '+oxydata+"bpm:"+bpmdata);
         res.send('SpO2: '+oxydata+"& bpm:"+bpmdata);
+        alert("Connected to SQL table!");
         insertIntoDB(req.params.SpO2,req.params.bpm);
     }
     else{
