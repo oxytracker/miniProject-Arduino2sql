@@ -4,13 +4,17 @@ const app = express();
 let port =process.env.PORT || 3000;
 
 const insertIntoDB = async (SpO2_value,bpm_value) =>{
+    try{
     const connection = await mysql.createConnection({
         host: "sql6.freesqldatabase.com",
         user: "sql6429938",
         password: "4XUSttYXwW",
         database: "sql6429938",
         port: 3306,
-    })
+    });
+    } catch (err) {
+    console.log(e);
+  }
 
     try{
         await connection.query(
